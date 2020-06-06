@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEAS University</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="style.css">
+    
+    <style type="text/css">
+        body{
+            color: #fff;
+            background: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .form-control{
+            height: 40px;
+            box-shadow: none;
+            color: #969fa4;
+        }
+        .form-control:focus{
+            border-color: #5cb85c;
+        }
+        .form-control, .btn{        
+            border-radius: 3px;
+        }
+        .signup-form{
+            width: 400px;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+        .signup-form h2{
+            color: #636363;
+            margin: 0 0 15px;
+            position: relative;
+            text-align: center;
+        }
+        .signup-form h2:before, .signup-form h2:after{
+            content: "";
+            height: 2px;
+            width: 30%;
+            background: #d4d4d4;
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+        }	
+        .signup-form h2:before{
+            left: 0;
+        }
+        .signup-form h2:after{
+            right: 0;
+        }
+        .signup-form .hint-text{
+            color: #999;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .signup-form form{
+            color: #999;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            background: #f2f3f7;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+        .signup-form .form-group{
+            margin-bottom: 20px;
+        }
+        .signup-form input[type="checkbox"]{
+            margin-top: 3px;
+        }
+        .signup-form .btn{        
+            font-size: 16px;
+            font-weight: bold;		
+            min-width: 140px;
+            outline: none !important;
+        }
+        .signup-form .row div:first-child{
+            padding-right: 10px;
+        }
+        .signup-form .row div:last-child{
+            padding-left: 10px;
+        }    	
+        .signup-form a{
+            color: #fff;
+            text-decoration: underline;
+        }
+        .signup-form a:hover{
+            text-decoration: none;
+        }
+        .signup-form form a{
+            color: #5cb85c;
+            text-decoration: none;
+        }	
+        .signup-form form a:hover{
+            text-decoration: underline;
+        }  
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">IDEAS University</a>
+            <span class="navbar-text">where ideas begin</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse offset-5" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">  
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutUs.html">About us</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="registration.html">Registration<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactUS.html">Contact Us</a>
+                </li>
+              </ul>
+              <!-- <span class="navbar-text">
+                Navbar text with an inline element
+              </span> -->
+            </div>
+          </nav>
+    </header>
+
+    
+    <div class="signup-form">
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h2>Register</h2>
+            <p class="hint-text">Create your account to get registered with us!</p>
+            <div class="form-group">
+                    <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required">
+                                  	
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+            </div>        
+            <div class="form-group">
+                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+            </div>
+        </form>
+        <div class="text-center">Already have an account? <a href="#">Sign in</a></div>
+    </div>
+  
+
+        <!-- Footer -->
+    <footer class="page-footer font-small text-light pt-4 bg-dark">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Our Priority</h5>
+            <p>The university was established to combat illiteracy rate in Pakistan and to provide quality education to the needy ones at affordable cost.</p>
+    
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!">Link 1</a>
+                </li>
+                <li>
+                <a href="#!">Link 2</a>
+                </li>
+                <li>
+                <a href="#!">Link 3</a>
+                </li>
+                <li>
+                <a href="#!">Link 4</a>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!">Link 1</a>
+                </li>
+                <li>
+                <a href="#!">Link 2</a>
+                </li>
+                <li>
+                <a href="#!">Link 3</a>
+                </li>
+                <li>
+                <a href="#!">Link 4</a>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <a href="#!">Link 1</a>
+                </li>
+                <li>
+                <a href="#!">Link 2</a>
+                </li>
+                <li>
+                <a href="#!">Link 3</a>
+                </li>
+                <li>
+                <a href="#!">Link 4</a>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <hr>
+    
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+            <h5 class="mb-1">Contact Us</h5>
+        </li>
+        <li class="list-inline-item">
+            <a href="contactUs.html" class="btn btn-danger btn-rounded">Click me!</a>
+        </li>
+        </ul>
+        <!-- Call to action -->
+    
+        <hr>
+    
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1">
+            <i class="fa fa-facebook-f"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1">
+            <i class="fa fa-twitter"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1">
+            <i class="fa fa-google-plus"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1">
+            <i class="fa fa-linkedin"> </i>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-dribbble mx-1">
+            <i class="fa fa-dribbble"> </i>
+            </a>
+        </li>
+        </ul>
+        <!-- Social buttons -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="index.html"> IDEAS University </a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+    
+
+    
+</body>
+</html>
